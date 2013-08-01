@@ -1,0 +1,11 @@
+Run with the following params
+
+./bsperf <port> <nthreads> <nqueues> <njobs>
+
+This will create nqueues and insert njobs into those queues using nthreads 
+After inserting all jobs they'll be reserved and deleted.
+Use njobs as a multiple of nthreads and nqueues (nqueues should be a multiple of nthreads).
+
+Example:
+
+./bsperf 11300 20 500 1000000
